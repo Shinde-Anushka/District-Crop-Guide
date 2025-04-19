@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops - Maharashtra Agriculture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            color: #00ff00;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00ff00;
+        }
+
+        .crops-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .crops-title {
+            color: #00ff00;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .crops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .crop-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .crop-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .crop-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        .crop-info {
+            padding: 1.5rem;
+        }
+
+        .crop-name {
+            color: #00ff00;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .crop-description {
+            color: #ffffff;
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top: 2px solid #00ff00;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #00ff00;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .crops-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Maharashtra Agriculture</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="our_team_members.html">Our Team Members</a>
+                <a href="motto.html">Motto of the Project</a>
+                <a href="crops.html">Crops</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="crops-container">
+        <h1 class="crops-title">Major Crops of Maharashtra</h1>
+        <div class="crops-grid">
+            <a href="crops/jowar.html" class="crop-card">
+                <img src="images/jowar.webp" alt="Jowar">
+                <h3>Jowar (Sorghum)</h3>
+                <p>Staple food crop of Maharashtra, drought-resistant and grown in both kharif and rabi seasons.</p>
+            </a>
+            <a href="crops/sugarcane.html" class="crop-card">
+                <img src="images/sugarcane.webp" alt="Sugarcane">
+                <h3>Sugarcane</h3>
+                <p>Major cash crop grown in irrigated areas, particularly in western Maharashtra.</p>
+            </a>
+            <a href="crops/groundnut.html" class="crop-card">
+                <img src="images/groundnut.webp" alt="Groundnut">
+                <h3>Groundnut</h3>
+                <p>Important oilseed crop grown in kharif season, particularly in Marathwada region.</p>
+            </a>
+            <a href="crops/pomegranate.html" class="crop-card">
+                <img src="images/pomegranate.webp" alt="Pomegranate">
+                <h3>Pomegranate</h3>
+                <p>Fruit crop grown in irrigated areas, known for its quality and export value.</p>
+            </a>
+            <a href="crops/onion.html" class="crop-card">
+                <img src="images/onion.webp" alt="Onion">
+                <h3>Onion</h3>
+                <p>Major vegetable crop, Maharashtra is one of the largest producers in India.</p>
+            </a>
+            <a href="crops/cotton.html" class="crop-card">
+                <img src="images/cotton.webp" alt="Cotton">
+                <h3>Cotton</h3>
+                <p>Important cash crop grown in Vidarbha region, known for its quality fiber.</p>
+            </a>
+            <a href="crops/grapes.html" class="crop-card">
+                <img src="images/grapes.webp" alt="Grapes">
+                <h3>Grapes</h3>
+                <p>Major fruit crop in Nashik region, known as the 'Grape Capital of India'.</p>
+            </a>
+            <a href="crops/rice.html" class="crop-card">
+                <img src="images/rice.webp" alt="Rice">
+                <h3>Rice</h3>
+                <p>Staple food crop grown in Konkan region, particularly in areas with high rainfall.</p>
+            </a>
+            <a href="crops/soybean.html" class="crop-card">
+                <img src="images/soybean.webp" alt="Soybean">
+                <h3>Soybean</h3>
+                <p>Important oilseed crop grown in kharif season, particularly in Vidarbha region.</p>
+            </a>
+            <a href="crops/tomato.html" class="crop-card">
+                <img src="images/tomato.webp" alt="Tomato">
+                <h3>Tomato</h3>
+                <p>Major vegetable crop grown in irrigated areas, particularly in western Maharashtra.</p>
+            </a>
+            <a href="crops/coconut.html" class="crop-card">
+                <img src="images/coconut.webp" alt="Coconut">
+                <h3>Coconut</h3>
+                <p>Major plantation crop in Konkan region, grown in coastal areas with high humidity.</p>
+            </a>
+            <a href="crops/arecanut.html" class="crop-card">
+                <img src="images/arecanut.webp" alt="Arecanut">
+                <h3>Arecanut</h3>
+                <p>Important plantation crop in Konkan region, grown in high rainfall areas.</p>
+            </a>
+            <a href="crops/cashew.html" class="crop-card">
+                <img src="images/cashew.webp" alt="Cashew">
+                <h3>Cashew</h3>
+                <p>Major plantation crop in Konkan region, Maharashtra is a leading producer in India.</p>
+            </a>
+            <a href="crops/mango.html" class="crop-card">
+                <img src="images/mango.webp" alt="Mango">
+                <h3>Mango</h3>
+                <p>Important fruit crop, particularly in Konkan and western Maharashtra regions.</p>
+            </a>
+            <a href="crops/wheat.html" class="crop-card">
+                <img src="images/wheat.webp" alt="Wheat">
+                <h3>Wheat</h3>
+                <p>Major rabi season crop grown in irrigated areas of western Maharashtra.</p>
+            </a>
+            <a href="crops/pulses.html" class="crop-card">
+                <img src="images/pulses.webp" alt="Pulses">
+                <h3>Pulses</h3>
+                <p>Important food crops including gram, tur, and moong, grown in both seasons.</p>
+            </a>
+            <a href="crops/maize.html" class="crop-card">
+                <img src="images/maize.webp" alt="Maize">
+                <h3>Maize</h3>
+                <p>Important cereal crop grown in kharif season, particularly in Vidarbha region.</p>
+            </a>
+            <a href="crops/turmeric.html" class="crop-card">
+                <img src="images/turmeric.webp" alt="Turmeric">
+                <h3>Turmeric</h3>
+                <p>Important spice crop grown in western Maharashtra and Marathwada regions.</p>
+            </a>
+            <a href="crops/banana.html" class="crop-card">
+                <img src="images/banana.webp" alt="Banana">
+                <h3>Banana</h3>
+                <p>Major fruit crop grown in irrigated areas of western Maharashtra.</p>
+            </a>
+            <a href="crops/orange.html" class="crop-card">
+                <img src="images/orange.webp" alt="Orange">
+                <h3>Orange</h3>
+                <p>Important fruit crop in Vidarbha region, particularly in Nagpur district.</p>
+            </a>
+            <a href="crops/chickpea.html" class="crop-card">
+                <img src="images/chickpea.webp" alt="Chickpea">
+                <h3>Chickpea (Chana)</h3>
+                <p>Important pulse crop grown in rabi season, particularly in Marathwada and Vidarbha regions.</p>
+            </a>
+            <a href="crops/sunflower.html" class="crop-card">
+                <img src="images/sunflower.webp" alt="Sunflower">
+                <h3>Sunflower</h3>
+                <p>Important oilseed crop grown in rabi season, particularly in western Maharashtra.</p>
+            </a>
+            <a href="crops/safflower.html" class="crop-card">
+                <img src="images/safflower.webp" alt="Safflower">
+                <h3>Safflower</h3>
+                <p>Traditional oilseed crop grown in rabi season, particularly in Marathwada region.</p>
+            </a>
+            <a href="crops/custard_apple.html" class="crop-card">
+                <img src="images/custard_apple.webp" alt="Custard Apple">
+                <h3>Custard Apple (Sitaphal)</h3>
+                <p>Important fruit crop grown in Konkan and western Maharashtra regions.</p>
+            </a>
+            <a href="crops/guava.html" class="crop-card">
+                <img src="images/guava.webp" alt="Guava">
+                <h3>Guava</h3>
+                <p>Major fruit crop grown in various regions of Maharashtra, known for its quality.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><i class="fas fa-copyright"></i> 2024 Maharashtra Agriculture. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

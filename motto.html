@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motto of the Project - Maharashtra Agriculture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            color: #00ff00;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00ff00;
+        }
+
+        .motto-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .motto-title {
+            color: #00ff00;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .motto-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .motto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .motto-heading {
+            color: #00ff00;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .motto-content {
+            color: #ffffff;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .motto-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .motto-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .motto-list li::before {
+            content: "•";
+            color: #00ff00;
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top: 2px solid #00ff00;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #00ff00;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Maharashtra Agriculture</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="our_team_members.html">Our Team Members</a>
+                <a href="motto.html">Motto of the Project</a>
+                <a href="crops.html">Crops</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="motto-container">
+        <h1 class="motto-title">Motto of the Project</h1>
+        
+        <div class="motto-card">
+            <h2 class="motto-heading">Our Vision</h2>
+            <p class="motto-content">
+                To create a comprehensive digital platform that empowers farmers, researchers, and agricultural enthusiasts with detailed information about Maharashtra's diverse agricultural landscape.
+            </p>
+        </div>
+
+        <div class="motto-card">
+            <h2 class="motto-heading">Our Mission</h2>
+            <p class="motto-content">
+                To provide accurate, accessible, and up-to-date agricultural information for all districts in Maharashtra, facilitating better decision-making and promoting sustainable farming practices.
+            </p>
+        </div>
+
+        <div class="motto-card">
+            <h2 class="motto-heading">Key Objectives</h2>
+            <ul class="motto-list">
+                <li class="motto-content">Create a centralized database of agricultural information for all districts</li>
+                <li class="motto-content">Provide detailed insights into climate conditions, soil types, and crop patterns</li>
+                <li class="motto-content">Support farmers in making informed decisions about crop selection and cultivation</li>
+                <li class="motto-content">Promote sustainable agricultural practices across Maharashtra</li>
+                <li class="motto-content">Bridge the information gap between farmers and agricultural experts</li>
+            </ul>
+        </div>
+
+        <div class="motto-card">
+            <h2 class="motto-heading">Our Commitment</h2>
+            <p class="motto-content">
+                We are committed to continuously updating and improving our platform with accurate information, ensuring that it remains a valuable resource for the agricultural community in Maharashtra. Our goal is to contribute to the growth and development of sustainable agriculture in the state.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><i class="fas fa-copyright"></i> 2024 Maharashtra Agriculture. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

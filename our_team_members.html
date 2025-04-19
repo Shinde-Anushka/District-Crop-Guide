@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Members - Maharashtra Agriculture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            color: #00ff00;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00ff00;
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .team-title {
+            color: #00ff00;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .team-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .member-info {
+            flex: 1;
+        }
+
+        .member-name {
+            color: #00ff00;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-prn {
+            color: #ffffff;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00ff00;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            background-color: rgba(0, 255, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ff00;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .photo-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .photo-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-card:hover .member-photo {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top: 2px solid #00ff00;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #00ff00;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .team-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .member-photo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Maharashtra Agriculture</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="our_team_members.html">Our Team Members</a>
+                <a href="motto.html">Motto of the Project</a>
+                <a href="crops.html">Crops</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="team-container">
+        <h1 class="team-title">Our Team Members</h1>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="member-info">
+                    <div class="member-name">Aman Pausker</div>
+                    <div class="member-prn">PRN: 124B1C154</div>
+                </div>
+                <div class="member-photo">
+                    <img src="images/aman.jpg" alt="Aman Pausker" onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user\'></i><span>Photo</span></div>'">
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="member-info">
+                    <div class="member-name">Ayush Shinde</div>
+                    <div class="member-prn">PRN: 124B1C158</div>
+                </div>
+                <div class="member-photo">
+                    <img src="images/ayush.jpg" alt="Ayush Shinde" onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user\'></i><span>Photo</span></div>'">
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="member-info">
+                    <div class="member-name">Anushka Shinde</div>
+                    <div class="member-prn">PRN: 124B1C178</div>
+                </div>
+                <div class="member-photo">
+                    <img src="images/anushka.jpg" alt="Anushka Shinde" onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user\'></i><span>Photo</span></div>'">
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="member-info">
+                    <div class="member-name">Sanika Gosavi</div>
+                    <div class="member-prn">PRN: 124B1C176</div>
+                </div>
+                <div class="member-photo">
+                    <img src="images/sanika.jpg" alt="Sanika Gosavi" onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user\'></i><span>Photo</span></div>'">
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="member-info">
+                    <div class="member-name">Nitya Gajarmal</div>
+                    <div class="member-prn">PRN: 124B1C170</div>
+                </div>
+                <div class="member-photo">
+                    <img src="images/nitya.jpg" alt="Nitya Gajarmal" onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user\'></i><span>Photo</span></div>'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><i class="fas fa-copyright"></i> 2024 Maharashtra Agriculture. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
